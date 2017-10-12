@@ -1,9 +1,9 @@
 /*
- * Robot Motor Controller script with PWM speed control
+ * Robot Motor Controller script with PWM speed control - Duel Channel
  */
 //---------------------- Motors
-int motorL[] = {4, 5};
-int motorR[] = {7, 6};
+int motorL[] = {3, 5};
+int motorR[] = {11, 6};
 int ledPin = 13;
 int Byte1 = 0;  //for incoming serial data
 int Byte2 = 0;  //for incoming serial data
@@ -41,8 +41,8 @@ if(Serial.available()==3)
   digitalWrite(motorL[1], LOW);
   digitalWrite(motorR[0], HIGH);
   digitalWrite(motorR[1], LOW);
-  analogWrite(5, motor_a);
-  analogWrite(6, motor_b);
+  analogWrite(3, motor_a);
+  analogWrite(11, motor_b);
   }
   else if (dir_y == 1) {  //Motor Forwards and Single motor Turning
   digitalWrite(motorL[0], LOW);
