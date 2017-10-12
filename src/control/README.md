@@ -99,3 +99,7 @@ This is the last version of the script before it turned Beta and is basically ve
 Dated: 27.10.12 - 31.10.12
 
 
+# Control Module Beta #
+
+This was the new name given to the "joystick_" code.  It has all the same functionality as previously mentioned by each version added new features and improvements.
+
